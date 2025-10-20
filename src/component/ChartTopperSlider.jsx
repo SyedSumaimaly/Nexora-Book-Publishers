@@ -160,7 +160,7 @@ const ChartTopperSlider = () => {
                     </div>
 
                     {/* Dots Navigation */}
-                    <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-3 z-10 hidden lg:flex">
+                    <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-3 z-10 lg:flex">
                         {slides.map((_, index) => (
                             <button
                                 key={index}
