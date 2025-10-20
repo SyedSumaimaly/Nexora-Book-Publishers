@@ -4,6 +4,7 @@ import VideoSection from './VideoSection'
 import ChartTopperSlider from './ChartTopperSlider'
 import CounterStats from './CounterStatsData'
 import AboutArea from './AboutArea'
+import ServicesArea from './ServicesArea'
 
 function HomePageComponent() {
     return (
@@ -11,8 +12,9 @@ function HomePageComponent() {
             <Banner />
             <VideoSection />
             <ChartTopperSlider />
-            <CounterStats/>
-            <AboutArea/>
+            <CounterStats />
+            <AboutArea />
+            <ServicesArea />
         </>
     )
 }
