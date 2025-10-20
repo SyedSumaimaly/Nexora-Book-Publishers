@@ -5,6 +5,8 @@ import ChartTopperSlider from './ChartTopperSlider'
 import CounterStats from './CounterStatsData'
 import AboutArea from './AboutArea'
 import ServicesArea from './ServicesArea'
+import CtaSection from './CtaSection'
+import ConsultationCta from './ConsultationCta'
 
 function HomePageComponent() {
     return (
@@ -15,6 +17,8 @@ function HomePageComponent() {
             <CounterStats />
             <AboutArea />
             <ServicesArea />
+            <CtaSection />
+            <ConsultationCta />
         </>
     )
 }

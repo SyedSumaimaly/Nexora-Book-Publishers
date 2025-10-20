@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png'
-import world from '../assets/world.png'
+// import world from '../assets/world.png'
 
 // --- Navigation Data (Centralized source) ---
 // This list drives both the navigation menu display and the application routing.
@@ -170,20 +170,6 @@ const NavigationBar = () => {
               <NavItem key={item.name} item={item} />
             ))}
           </div>
-
-          {/* Vertical Separator Line */}
-          <div className="h-10 w-px bg-gray-300 mx-4 hidden lg:block"></div>
-
-          {/* Orange Contact Icon/Logo on the far right */}
-          <a href="#contact" className="w-10 h-10">
-            <img 
-            src={world}
-            alt="NEXORA BOOK PUBLISHERS LOGO"
-            // Logo sizing is w-24 (mobile) and lg:w-32 (desktop)
-            className="w-16 object-contain" 
-           
-          />
-          </a>
         </div>
       </div>
 
