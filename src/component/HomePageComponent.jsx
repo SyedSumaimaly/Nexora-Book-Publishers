@@ -8,6 +8,9 @@ import ServicesArea from './ServicesArea'
 import CtaSection from './CtaSection'
 import ConsultationCta from './ConsultationCta'
 import SliderSection from './SliderSection'
+import SliderPlaceholder from './SliderPlaceholder'
+import HowWeOperateSection from './HowWeOperateSection'
+
 
 function HomePageComponent() {
     return (
@@ -21,6 +24,8 @@ function HomePageComponent() {
             <CtaSection />
             <ConsultationCta />
             <SliderSection />
+            <SliderPlaceholder />
+            <HowWeOperateSection/>
         </>
     )
 }
