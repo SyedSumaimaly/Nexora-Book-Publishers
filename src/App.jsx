@@ -3,21 +3,23 @@ import React, { useState, useEffect } from 'react';
 // Import Layout, PageContent, and NAV_LINKS from components
 import Layout from './component/Layout';
 import PageContent from './component/PageContent';
-import HomePageComponent from './component/HomePageComponent';
+// import HomePageComponent from './component/HomePageComponent';
+import HomePage from './pages/HomePage'
+import BookWriting from './pages/BookWriting';
 import { NAV_LINKS } from './component/NavigationBar'; // Import NAV_LINKS to build ALL_PAGES
 
 // --- Master List of All Pages for Routing (45 PAGES) ---
 // This array defines the route targets and uses the imported PageContent component.
 const ALL_PAGES = [
   // --- TOP LEVEL PAGES (5) ---
-  { path: '#home', name: 'Home', component: HomePageComponent },
+  { path: '#home', name: 'Home', component: HomePage },
   { path: '#story', name: 'Our Story', component: () => <PageContent title="Our Story" /> },
   { path: '#reviews', name: 'Our Reviews', component: () => <PageContent title="Our Reviews" /> },
   { path: '#portfolio', name: 'Portfolio', component: () => <PageContent title="Portfolio" /> },
   { path: '#contact', name: 'Contact Us', component: () => <PageContent title="Contact Us" /> },
 
   // --- MAIN CATEGORY PAGES (5) ---
-  { path: '#writing', name: 'Book Writing', component: () => <PageContent title="Book Writing Service" /> },
+  { path: '#writing', name: 'Book Writing', component: BookWriting },
   { path: '#editing', name: 'Book Editing', component: () => <PageContent title="Book Editing Service" /> },
   { path: '#publishing', name: 'Book Publishing', component: () => <PageContent title="Book Publishing Service" /> },
   { path: '#marketing', name: 'Book Marketing', component: () => <PageContent title="Book Marketing Service" /> },
@@ -71,7 +73,7 @@ const App = () => {
 
   useEffect(() => {
     const handleHashChange = () => {
-      const hash = window.location.hash.split('?')[0]; 
+      const hash = window.location.hash.split('?')[0];
       setCurrentPath(hash || '#home');
     };
 
@@ -82,8 +84,8 @@ const App = () => {
   }, []);
 
   const currentPage = ALL_PAGES.find(page => page.path === currentPath);
-  const PageComponent = currentPage 
-    ? currentPage.component 
+  const PageComponent = currentPage
+    ? currentPage.component
     : () => <PageContent title="404 - Page Not Found" />; // Use the imported PageContent
 
   return (
