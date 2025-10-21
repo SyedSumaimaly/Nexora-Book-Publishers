@@ -10,6 +10,7 @@ import ConsultationCta from './ConsultationCta'
 import SliderSection from './SliderSection'
 import SliderPlaceholder from './SliderPlaceholder'
 import HowWeOperateSection from './HowWeOperateSection'
+import FaqSection from './FaqSection'
 
 
 function HomePageComponent() {
@@ -25,7 +26,8 @@ function HomePageComponent() {
             <ConsultationCta />
             <SliderSection />
             <SliderPlaceholder />
-            <HowWeOperateSection/>
+            <HowWeOperateSection />
+            <FaqSection />
         </>
     )
 }
