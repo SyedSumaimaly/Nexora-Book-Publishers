@@ -125,7 +125,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-100 font-sans relative shadow-sm">
+    <nav className="bg-white border-b border-gray-100 font-sans relative shadow-sm z-10000">
       <div className="max-w-7xl mx-auto h-24 flex items-center justify-between px-4 lg:px-8 relative">
 
         {/* 1. Left Section (Hamburger Menu / Desktop Links) */}
