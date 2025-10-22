@@ -7,6 +7,7 @@ import PageContent from './component/PageContent';
 import HomePage from './pages/HomePage'
 import BookWriting from './pages/BookWriting';
 import { NAV_LINKS } from './component/NavigationBar'; // Import NAV_LINKS to build ALL_PAGES
+import BookCoaching from './pages/BookCoaching';
 
 // --- Master List of All Pages for Routing (45 PAGES) ---
 // This array defines the route targets and uses the imported PageContent component.
@@ -26,7 +27,8 @@ const ALL_PAGES = [
   { path: '#design', name: 'Book Design', component: () => <PageContent title="Book Design Service" /> },
 
   // --- WRITING SUB-PAGES (6) ---
-  { path: '#writing/ghostwriting', name: 'Ghostwriting', component: () => <PageContent title="Professional Ghostwriting Services" /> },
+  { path: '#writing/ghostwriting', name: 'Ghost Writing', component: () => <PageContent title="Professional Ghostwriting Services" /> },
+  { path: '#writing/book-coaching', name: 'Book Coaching', component: BookCoaching },
   { path: '#writing/seo', name: 'SEO Content', component: () => <PageContent title="SEO Content & Optimization" /> },
   { path: '#writing/blog', name: 'Blog Creation', component: () => <PageContent title="Blogging and Content Strategy" /> },
   { path: '#writing/script', name: 'Script Writing', component: () => <PageContent title="Screenplay & Script Writing" /> },
