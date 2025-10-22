@@ -59,7 +59,7 @@ const ConsultationCta = () => {
                     <div className="pt-6">
                         <a 
                             href="#contact" 
-                            className="inline-block bg-[#ef4f1b] hover:bg-[#db3e0e] text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 text-lg uppercase tracking-wider"
+                            className="inline-block bg-[#ef4f1b] hover:bg-[#db3e0e] text-white border-white border-solid border-2 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 text-lg uppercase tracking-wider"
                         >
                             Get Started Today
                         </a>

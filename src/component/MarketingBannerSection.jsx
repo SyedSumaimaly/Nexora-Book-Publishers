@@ -183,7 +183,7 @@ const MarketingBannerSection = () => {
                                         type="submit" 
                                         id="bannerFormSubmit" 
                                         className={`
-                                            header-btn ${LUXURY_REGULAR} flex justify-center items-center w-[60%] ease-in duration-300 
+                                            header-btn ${LUXURY_REGULAR} cursor-pointer flex justify-center items-center w-[60%] ease-in duration-300 
                                             bg-gradient-to-t from-[#EB420C] to-[#FB7A4F] rounded-full xl:py-4 py-3 text-white 
                                             text-xl lg:text-2xl border-white border-solid border-2 hover:opacity-90
                                         `}

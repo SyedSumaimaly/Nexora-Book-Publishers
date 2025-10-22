@@ -106,7 +106,7 @@ const MarketingAboutSection = () => {
                             onClick={handleCtaClick}
                             // Replicating the large, gradient, rounded button style
                             className={`
-                                ${LUXURY_REGULAR} mt-10 flex justify-center items-center
+                                ${LUXURY_REGULAR} mt-10 border-black border-solid border-2 flex justify-center items-center
                                 xl:w-[325px] w-[220px] transition-all duration-300 
                                 bg-gradient-to-t from-[#EB420A] to-[#FB7A4F]
                                 rounded-full py-2 xl:py-4 text-white xl:text-2xl text-lg 
