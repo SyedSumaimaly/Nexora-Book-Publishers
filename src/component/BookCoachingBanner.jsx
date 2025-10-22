@@ -1,6 +1,5 @@
 import React from 'react';
-// Assuming these are the paths to your images. You will need to adjust them.
-// For this example, I'll use simple placeholder names.
+
 import InnerBannerBg from '../assets/inner-banner.png'; 
 import ChatIcon from '../assets/message.png';
 import CSuitBadge from '../assets/award-three.png';
@@ -8,10 +7,9 @@ import ReadersFavoriteBadge from '../assets/award-one.png';
 import AwardTwoBadge from '../assets/award-two.png';
 
 const BookCoachingBanner = () => {
-    // Placeholder function for the 'Let's Discuss' button's functionality
+    
     const handleDiscussClick = (e) => {
         e.preventDefault();
-        // Here you would typically toggle your modal state or navigate
         console.log("Modal toggle requested for static-modal");
     };
 
