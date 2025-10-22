@@ -75,7 +75,7 @@ const MarketingAboutSection = () => {
     };
 
     return (
-        <section className="bg-[#F9F9F9] py-4 lg:px-4 px-2">
+        <section className="bg-[#F9F9F9] py-4 lg:px-4 px-2 overflow-x-hidden">
             <div className="container mx-auto about_area">
                 <div className="flex items-start lg:items-center justify-between lg:flex-row flex-col">
 
