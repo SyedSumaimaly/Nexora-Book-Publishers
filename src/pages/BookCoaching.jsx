@@ -1,11 +1,12 @@
 import React from 'react'
+import BookCoachingBanner from '../component/BookCoachingBanner'
 
 function BookCoaching() {
-  return (
-    <div>
-      <h1>Book Coaching page</h1>
-    </div>
-  )
+    return (
+        <>
+            <BookCoachingBanner />
+        </>
+    )
 }
 
 export default BookCoaching
