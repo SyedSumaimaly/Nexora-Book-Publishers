@@ -9,6 +9,7 @@ import BookWriting from './pages/BookWriting';
 import { NAV_LINKS } from './component/NavigationBar'; // Import NAV_LINKS to build ALL_PAGES
 import BookCoaching from './pages/BookCoaching';
 import BookMarketing from './pages/BookMarketing';
+import BookEditing from './pages/BookEditing';
 
 // --- Master List of All Pages for Routing (45 PAGES) ---
 // This array defines the route targets and uses the imported PageContent component.
@@ -22,7 +23,7 @@ const ALL_PAGES = [
 
   // --- MAIN CATEGORY PAGES (5) ---
   { path: '#writing', name: 'Book Writing', component: BookWriting },
-  { path: '#editing', name: 'Book Editing', component: () => <PageContent title="Book Editing Service" /> },
+  { path: '#editing', name: 'Book Editing', component: BookEditing },
   { path: '#publishing', name: 'Book Publishing', component: () => <PageContent title="Book Publishing Service" /> },
   { path: '#marketing', name: 'Book Marketing', component: BookMarketing },
   { path: '#design', name: 'Book Design', component: () => <PageContent title="Book Design Service" /> },
