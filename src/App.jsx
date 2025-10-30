@@ -11,6 +11,7 @@ import BookCoaching from './pages/BookCoaching';
 import BookMarketing from './pages/BookMarketing';
 import BookEditing from './pages/BookEditing';
 import BookPublishing from './pages/BookPublishing';
+import BookDesign from './pages/BookDesign';
 
 // --- Master List of All Pages for Routing (45 PAGES) ---
 // This array defines the route targets and uses the imported PageContent component.
@@ -27,7 +28,7 @@ const ALL_PAGES = [
   { path: '#editing', name: 'Book Editing', component: BookEditing },
   { path: '#publishing', name: 'Book Publishing', component: BookPublishing },
   { path: '#marketing', name: 'Book Marketing', component: BookMarketing },
-  { path: '#design', name: 'Book Design', component: () => <PageContent title="Book Design Service" /> },
+  { path: '#design', name: 'Book Design', component: BookDesign },
 
   // --- WRITING SUB-PAGES (6) ---
   { path: '#writing/ghostwriting', name: 'Ghost Writing', component: () => <PageContent title="Professional Ghostwriting Services" /> },
