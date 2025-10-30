@@ -83,7 +83,7 @@ const BookEditingFullSection = () => {
                                 {/* Arrow Button: Light gray circle with dark gray arrow */}
                                 <a 
                                     href={service.link}
-                                    className="mt-auto block w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 transition duration-300 ease-in-out hover:bg-gray-300"
+                                    className="mt-auto block w-10 h-10 rounded-full bg-gray-200 items-center justify-center text-gray-700 transition duration-300 ease-in-out hover:bg-gray-300"
                                     aria-label={`Learn more about ${service.title}`}
                                 >
                                     {/* SVG for a crisp right arrow icon */}
