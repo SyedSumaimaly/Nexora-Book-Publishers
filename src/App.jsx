@@ -12,13 +12,14 @@ import BookMarketing from './pages/BookMarketing';
 import BookEditing from './pages/BookEditing';
 import BookPublishing from './pages/BookPublishing';
 import BookDesign from './pages/BookDesign';
+import OurStory from './pages/OurStory';
 
 // --- Master List of All Pages for Routing (45 PAGES) ---
 // This array defines the route targets and uses the imported PageContent component.
 const ALL_PAGES = [
   // --- TOP LEVEL PAGES (5) ---
   { path: '#home', name: 'Home', component: HomePage },
-  { path: '#story', name: 'Our Story', component: () => <PageContent title="Our Story" /> },
+  { path: '#story', name: 'Our Story', component: OurStory },
   { path: '#reviews', name: 'Our Reviews', component: () => <PageContent title="Our Reviews" /> },
   { path: '#portfolio', name: 'Portfolio', component: () => <PageContent title="Portfolio" /> },
   { path: '#contact', name: 'Contact Us', component: () => <PageContent title="Contact Us" /> },
