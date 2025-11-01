@@ -1,7 +1,5 @@
 import React from 'react';
 
-// Assuming you have these images in your project's assets or public directory
-// and can import/reference them correctly.
 import sendArrow from '../assets/send-arrow.png';
 import chattingIcon from '../assets/chating-icon.png';
 import dcImage from '../assets/dc.png';

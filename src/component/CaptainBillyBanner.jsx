@@ -25,7 +25,7 @@ const CaptainBillyBanner = () => {
                 {/* Text Content */}
                 <div className="w-full max-w-[680px] md:pt-20 pt-0">
                     <h1 className="xl:text-[60px] lg:text-[40px] md:text-[40px] text-[30px] luxury-regular text-black leading-tight text-balance">
-                        Captain Billy - Continuing the Legacy of Fawcett Publication s
+                        Captain Billy - Continuing the Legacy of Nexora Publishers
                     </h1>
                     <p className="md:text-[18px] text-[16px] manifest-regular font-medium text-[#BEBEBE] text-balance pt-3">
                         In the early 20th century, a visionary named Wilford Hamilton Fawcett, better known as Captain
