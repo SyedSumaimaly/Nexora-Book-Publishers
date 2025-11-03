@@ -7,13 +7,8 @@ import logo from '../assets/logo.png'
 export const NAV_LINKS = [
   // Left Section Services (Dropdowns - 6 sub-links each)
   { name: 'Book Writing', href: '#writing', dropdown: true, section: 'left', subLinks: [
-    { name: 'Ghost Writing', href: '#writing/ghostwriting' }, 
     { name: 'Book Coaching', href: '#writing/book-coaching' }, 
-    { name: 'SEO Content', href: '#writing/seo' },
-    { name: 'Blog Creation', href: '#writing/blog' },
-    { name: 'Script Writing', href: '#writing/script' },
-    { name: 'Technical Writing', href: '#writing/technical' },
-    { name: 'Book Proposal', href: '#writing/proposal' },
+    { name: 'Business And Leadership Book', href: '#writing/business-and-leadership-book' }, 
   ]},
   { name: 'Book Editing', href: '#editing', dropdown: true, section: 'left', subLinks: [
     { name: 'Developmental Edit', href: '#editing/developmental' }, 

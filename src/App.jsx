@@ -13,6 +13,7 @@ import BookEditing from './pages/BookEditing';
 import BookPublishing from './pages/BookPublishing';
 import BookDesign from './pages/BookDesign';
 import OurStory from './pages/OurStory';
+import BusinessLeadership from './pages/BusinessLeadership';
 
 // --- Master List of All Pages for Routing (45 PAGES) ---
 // This array defines the route targets and uses the imported PageContent component.
@@ -32,13 +33,9 @@ const ALL_PAGES = [
   { path: '#design', name: 'Book Design', component: BookDesign },
 
   // --- WRITING SUB-PAGES (6) ---
-  { path: '#writing/ghostwriting', name: 'Ghost Writing', component: () => <PageContent title="Professional Ghostwriting Services" /> },
   { path: '#writing/book-coaching', name: 'Book Coaching', component: BookCoaching },
-  { path: '#writing/seo', name: 'SEO Content', component: () => <PageContent title="SEO Content & Optimization" /> },
-  { path: '#writing/blog', name: 'Blog Creation', component: () => <PageContent title="Blogging and Content Strategy" /> },
-  { path: '#writing/script', name: 'Script Writing', component: () => <PageContent title="Screenplay & Script Writing" /> },
   { path: '#writing/technical', name: 'Technical Writing', component: () => <PageContent title="Technical Manuals & Documentation" /> },
-  { path: '#writing/proposal', name: 'Book Proposal', component: () => <PageContent title="Book Proposal Development" /> },
+  { path: '#writing/business-and-leadership-book', name: 'Business And Leadership Book', component: BusinessLeadership },
 
   // --- EDITING SUB-PAGES (6) ---
   { path: '#editing/developmental', name: 'Developmental Edit', component: () => <PageContent title="Developmental Editing (Structure & Plot)" /> },
