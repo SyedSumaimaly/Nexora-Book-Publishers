@@ -11,6 +11,7 @@ export const NAV_LINKS = [
     { name: 'Business And Leadership Book', href: '#writing/business-and-leadership-book' }, 
   ]},
   { name: 'Book Editing', href: '#editing', dropdown: true, section: 'left', subLinks: [
+    { name: 'Review Consultation Services', href: '#editing/review-consultation-services' }, 
     { name: 'Developmental Edit', href: '#editing/developmental' }, 
     { name: 'Copyediting', href: '#editing/copyediting' },
     { name: 'Line Editing', href: '#editing/line' },

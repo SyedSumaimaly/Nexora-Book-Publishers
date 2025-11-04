@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-// Import Layout, PageContent, and NAV_LINKS from components
 import Layout from './component/Layout';
 import PageContent from './component/PageContent';
-// import HomePageComponent from './component/HomePageComponent';
 import HomePage from './pages/HomePage'
 import BookWriting from './pages/BookWriting';
-import { NAV_LINKS } from './component/NavigationBar'; // Import NAV_LINKS to build ALL_PAGES
+import { NAV_LINKS } from './component/NavigationBar'; 
 import BookCoaching from './pages/BookCoaching';
 import BookMarketing from './pages/BookMarketing';
 import BookEditing from './pages/BookEditing';
@@ -14,9 +12,9 @@ import BookPublishing from './pages/BookPublishing';
 import BookDesign from './pages/BookDesign';
 import OurStory from './pages/OurStory';
 import BusinessLeadership from './pages/BusinessLeadership';
+import ReviewConsultationServices from './pages/ReviewConsultationServices';
 
-// --- Master List of All Pages for Routing (45 PAGES) ---
-// This array defines the route targets and uses the imported PageContent component.
+
 const ALL_PAGES = [
   // --- TOP LEVEL PAGES (5) ---
   { path: '#home', name: 'Home', component: HomePage },
@@ -38,6 +36,7 @@ const ALL_PAGES = [
   { path: '#writing/business-and-leadership-book', name: 'Business And Leadership Book', component: BusinessLeadership },
 
   // --- EDITING SUB-PAGES (6) ---
+  { path: '#editing/review-consultation-services', name: 'Review Consultation Services', component: ReviewConsultationServices },
   { path: '#editing/developmental', name: 'Developmental Edit', component: () => <PageContent title="Developmental Editing (Structure & Plot)" /> },
   { path: '#editing/copyediting', name: 'Copyediting', component: () => <PageContent title="Copyediting (Flow & Consistency)" /> },
   { path: '#editing/line', name: 'Line Editing', component: () => <PageContent title="Line Editing (Style & Tone)" /> },
