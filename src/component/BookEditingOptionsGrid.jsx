@@ -99,7 +99,7 @@ const BookEditingOptionsGrid = () => {
             <div className="container mx-auto">
                 
                 <h3 className="text-center text-[#1D1D1F] luxury-regular xl:text-[64px] text-[25px] leading-tight">
-                    Our Book-Editing Options<br className='sm:hidden' /> Include
+                    Need More Book Love?
                 </h3>
                 
                
