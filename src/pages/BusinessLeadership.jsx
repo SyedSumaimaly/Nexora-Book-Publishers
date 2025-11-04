@@ -3,6 +3,8 @@ import BusinessBookGhostwritingBanner from '../component/BusinessBookGhostwritin
 import CounterStats from '../component/CounterStatsData'
 import BookElevationSection from '../component/BookElevationSection'
 import BookEditingOptionsGrid from '../component/BookEditingOptionsGrid'
+import OurWorkGallery from '../component/OurWorkGallery'
+import FaqSection from '../component/FaqSection'
 
 function BusinessLeadership() {
     return (
@@ -11,6 +13,8 @@ function BusinessLeadership() {
             <CounterStats />
             <BookElevationSection />
             <BookEditingOptionsGrid />
+            <OurWorkGallery />
+            <FaqSection />
         </>
     )
 }
