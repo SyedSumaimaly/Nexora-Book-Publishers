@@ -14,6 +14,7 @@ import OurStory from './pages/OurStory';
 import BusinessLeadership from './pages/BusinessLeadership';
 import ReviewConsultationServices from './pages/ReviewConsultationServices';
 import DevelopmentalEditing from './pages/DevelopmentalEditing';
+import CoverCopyPolish from './pages/CoverCopyPolish';
 
 
 const ALL_PAGES = [
@@ -39,6 +40,7 @@ const ALL_PAGES = [
   // --- EDITING SUB-PAGES (6) ---
   { path: '#editing/review-consultation-services', name: 'Review Consultation Services', component: ReviewConsultationServices },
   { path: '#editing/developmental', name: 'Developmental Edit', component: DevelopmentalEditing },
+  { path: '#editing/cover-copy-polish', name: 'Cover Copy Polish', component: CoverCopyPolish },
   { path: '#editing/copyediting', name: 'Copyediting', component: () => <PageContent title="Copyediting (Flow & Consistency)" /> },
   { path: '#editing/line', name: 'Line Editing', component: () => <PageContent title="Line Editing (Style & Tone)" /> },
   { path: '#editing/proofreading', name: 'Proofreading', component: () => <PageContent title="Proofreading (Final Polish)" /> },

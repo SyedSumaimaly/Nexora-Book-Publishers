@@ -13,6 +13,7 @@ export const NAV_LINKS = [
   { name: 'Book Editing', href: '#editing', dropdown: true, section: 'left', subLinks: [
     { name: 'Review Consultation Services', href: '#editing/review-consultation-services' }, 
     { name: 'Developmental Edit', href: '#editing/developmental' }, 
+    { name: 'Cover Copy Polish', href: '#editing/cover-copy-polish' }, 
     { name: 'Copyediting', href: '#editing/copyediting' },
     { name: 'Line Editing', href: '#editing/line' },
     { name: 'Proofreading', href: '#editing/proofreading' },
