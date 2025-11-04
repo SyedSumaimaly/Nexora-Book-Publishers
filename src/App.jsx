@@ -13,6 +13,7 @@ import BookDesign from './pages/BookDesign';
 import OurStory from './pages/OurStory';
 import BusinessLeadership from './pages/BusinessLeadership';
 import ReviewConsultationServices from './pages/ReviewConsultationServices';
+import DevelopmentalEditing from './pages/DevelopmentalEditing';
 
 
 const ALL_PAGES = [
@@ -37,7 +38,7 @@ const ALL_PAGES = [
 
   // --- EDITING SUB-PAGES (6) ---
   { path: '#editing/review-consultation-services', name: 'Review Consultation Services', component: ReviewConsultationServices },
-  { path: '#editing/developmental', name: 'Developmental Edit', component: () => <PageContent title="Developmental Editing (Structure & Plot)" /> },
+  { path: '#editing/developmental', name: 'Developmental Edit', component: DevelopmentalEditing },
   { path: '#editing/copyediting', name: 'Copyediting', component: () => <PageContent title="Copyediting (Flow & Consistency)" /> },
   { path: '#editing/line', name: 'Line Editing', component: () => <PageContent title="Line Editing (Style & Tone)" /> },
   { path: '#editing/proofreading', name: 'Proofreading', component: () => <PageContent title="Proofreading (Final Polish)" /> },
