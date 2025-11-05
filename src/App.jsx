@@ -4,7 +4,7 @@ import Layout from './component/Layout';
 import PageContent from './component/PageContent';
 import HomePage from './pages/HomePage'
 import BookWriting from './pages/BookWriting';
-import { NAV_LINKS } from './component/NavigationBar'; 
+import { NAV_LINKS } from './component/NavigationBar';
 import BookCoaching from './pages/BookCoaching';
 import BookMarketing from './pages/BookMarketing';
 import BookEditing from './pages/BookEditing';
@@ -83,6 +83,7 @@ const ALL_PAGES = [
 // --- Main App Component (Router) ---
 const App = () => {
   const [currentPath, setCurrentPath] = useState(window.location.hash || '#home');
+  
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -102,9 +103,11 @@ const App = () => {
     : () => <PageContent title="404 - Page Not Found" />; // Use the imported PageContent
 
   return (
+
     <Layout>
       <PageComponent />
     </Layout>
+
   );
 };
 
