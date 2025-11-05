@@ -22,7 +22,7 @@ export const NAV_LINKS = [
     { name: 'Query Letter Review', href: '#editing/query' },
   ]},
   { name: 'Book Publishing', href: '#publishing', dropdown: true, section: 'left', subLinks: [
-    { name: 'Self-Publishing Guide', href: '#publishing/self' }, 
+    { name: 'Starter', href: '#publishing/starter' }, 
     { name: 'Traditional Submissions', href: '#publishing/traditional' },
     { name: 'Distribution Setup', href: '#publishing/distribution' },
     { name: 'Print-on-Demand', href: '#publishing/pod' },

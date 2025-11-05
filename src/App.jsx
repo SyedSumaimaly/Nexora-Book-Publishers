@@ -16,6 +16,7 @@ import ReviewConsultationServices from './pages/ReviewConsultationServices';
 import DevelopmentalEditing from './pages/DevelopmentalEditing';
 import CoverCopyPolish from './pages/CoverCopyPolish';
 import EditorialAssessment from './pages/EditorialAssessment';
+import Starter from './pages/Starter';
 
 
 const ALL_PAGES = [
@@ -50,7 +51,7 @@ const ALL_PAGES = [
   { path: '#editing/query', name: 'Query Letter Review', component: () => <PageContent title="Agent Query Letter Review" /> },
 
   // --- PUBLISHING SUB-PAGES (6) ---
-  { path: '#publishing/self', name: 'Self-Publishing Guide', component: () => <PageContent title="Complete Self-Publishing Guidance" /> },
+  { path: '#publishing/starter', name: 'Starter', component: Starter },
   { path: '#publishing/traditional', name: 'Traditional Submissions', component: () => <PageContent title="Traditional Publishing Submission Support" /> },
   { path: '#publishing/distribution', name: 'Distribution Setup', component: () => <PageContent title="Book Distribution Management" /> },
   { path: '#publishing/pod', name: 'Print-on-Demand', component: () => <PageContent title="Print-on-Demand Setup" /> },
