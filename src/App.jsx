@@ -18,6 +18,7 @@ import CoverCopyPolish from './pages/CoverCopyPolish';
 import EditorialAssessment from './pages/EditorialAssessment';
 import Starter from './pages/Starter';
 import Essential from './pages/Essential';
+import Plus from './pages/Plus';
 
 
 const ALL_PAGES = [
@@ -54,6 +55,7 @@ const ALL_PAGES = [
   // --- PUBLISHING SUB-PAGES (6) ---
   { path: '#publishing/starter', name: 'Starter', component: Starter },
   { path: '#publishing/essential', name: 'Starter', component: Essential },
+  { path: '#publishing/plus', name: 'Starter', component: Plus },
   { path: '#publishing/traditional', name: 'Traditional Submissions', component: () => <PageContent title="Traditional Publishing Submission Support" /> },
   { path: '#publishing/distribution', name: 'Distribution Setup', component: () => <PageContent title="Book Distribution Management" /> },
   { path: '#publishing/pod', name: 'Print-on-Demand', component: () => <PageContent title="Print-on-Demand Setup" /> },

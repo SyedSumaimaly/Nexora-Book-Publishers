@@ -24,6 +24,7 @@ export const NAV_LINKS = [
   { name: 'Book Publishing', href: '#publishing', dropdown: true, section: 'left', subLinks: [
     { name: 'Starter', href: '#publishing/starter' }, 
     { name: 'Essential', href: '#publishing/essential' }, 
+    { name: 'Plus', href: '#publishing/plus' }, 
     { name: 'Traditional Submissions', href: '#publishing/traditional' },
     { name: 'Distribution Setup', href: '#publishing/distribution' },
     { name: 'Print-on-Demand', href: '#publishing/pod' },
