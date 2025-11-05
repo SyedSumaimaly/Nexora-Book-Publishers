@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@font-face {
+  font-family: 'MyCustomFont'; /* This is the name you'll use in React */
+  src: url('./assets/fonts/luxury.otf') format('otf'),
+       url('./assets/fonts/luxury.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; 
+}
+
+body {
+  font-family: 'MyCustomFont' !important; 
+}
