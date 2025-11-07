@@ -32,15 +32,11 @@ export const NAV_LINKS = [
       { name: 'Plus', href: '#publishing/plus' },
       { name: 'Elemental', href: '#publishing/elemental' },
       { name: 'Softcover Publishing', href: '#publishing/softcover-publishing' },
-      { name: 'Traditional Submissions', href: '#publishing/traditional' },
-      { name: 'Distribution Setup', href: '#publishing/distribution' },
-      { name: 'Print-on-Demand', href: '#publishing/pod' },
-      { name: 'Ebook Conversion', href: '#publishing/ebook' },
-      { name: 'ISBN & Copyright', href: '#publishing/legal' },
     ]
   },
   {
     name: 'Book Marketing', href: '#marketing', dropdown: true, section: 'left', subLinks: [
+      { name: 'Publicity Compaigns', href: '#marketing/publicity-compaigns' },
       { name: 'Social Media Campaign', href: '#marketing/social' },
       { name: 'Launch Strategy', href: '#marketing/launch' },
       { name: 'Book Trailer Production', href: '#marketing/trailer' },

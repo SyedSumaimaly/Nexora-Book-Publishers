@@ -21,6 +21,7 @@ import Essential from './pages/Essential';
 import Plus from './pages/Plus';
 import Elemental from './pages/Elemental';
 import SoftcoverPublishing from './pages/SoftcoverPublishing';
+import PublicityCompaigns from './pages/PublicityCompaigns';
 
 
 const ALL_PAGES = [
@@ -60,14 +61,9 @@ const ALL_PAGES = [
   { path: '#publishing/plus', name: 'Plus', component: Plus },
   { path: '#publishing/elemental', name: 'Elemental', component: Elemental },
   { path: '#publishing/softcover-publishing', name: 'Softcover Publishing', component: SoftcoverPublishing },
-  { path: '#publishing/traditional', name: 'Traditional Submissions', component: () => <PageContent title="Traditional Publishing Submission Support" /> },
-  { path: '#publishing/distribution', name: 'Distribution Setup', component: () => <PageContent title="Book Distribution Management" /> },
-  { path: '#publishing/pod', name: 'Print-on-Demand', component: () => <PageContent title="Print-on-Demand Setup" /> },
-  { path: '#publishing/ebook', name: 'Ebook Conversion', component: () => <PageContent title="Ebook Formatting & Conversion" /> },
-  { path: '#publishing/legal', name: 'ISBN & Copyright', component: () => <PageContent title="ISBN Assignment & Copyright Registration" /> },
 
   // --- MARKETING SUB-PAGES (6) ---
-  { path: '#marketing/social', name: 'Social Media Campaign', component: () => <PageContent title="Full Social Media Campaign Management" /> },
+  { path: '#marketing/publicity-compaigns', name: 'Publicity Compaigns', component: PublicityCompaigns },
   { path: '#marketing/launch', name: 'Launch Strategy', component: () => <PageContent title="Book Launch Strategy & Planning" /> },
   { path: '#marketing/trailer', name: 'Book Trailer Production', component: () => <PageContent title="Professional Book Trailer Video" /> },
   { path: '#marketing/website', name: 'Author Website Design', component: () => <PageContent title="Custom Author Website Development" /> },
