@@ -15,7 +15,7 @@ const PublicityCampaignsBanner = () => {
                 backgroundPosition: 'center'
             }}
 
-            className="lg:pt-10 pt-20 bg-[url('./images/inner-banner.png')] bg-center-bottom bg-no-repeat flex justify-center bg-cover"
+            className="lg:pt-10 pt-20 bg-center-bottom bg-no-repeat flex justify-center bg-cover"
         >
             <div className="container mx-auto py-10">
                 <div className="md:flex items-center">
@@ -39,7 +39,7 @@ const PublicityCampaignsBanner = () => {
                                     href="void:;"
                                     data-modal-target="static-modal"
                                     data-modal-toggle="static-modal"
-                                    className="header-btn luxury-regular flex justify-center items-center gap-5 lg:w-[330px] w-[200px] ease-in duration-300 bg-gradient-to-t from-[#EB420C] to-[#FB7A4F] rounded-full xl:py-4 py-2 text-white text-xl lg:text-2xl hover:scale-110 hover:text-white"
+                                    className="header-btn luxury-regular flex justify-center items-center gap-5 lg:w-[330px] w-[200px] ease-in duration-300 bg-gradient-to-t from-[#EB420C] to-[#FB7A4F] rounded-full xl:py-4 py-2 text-white text-xl lg:text-2xl hover:scale-105 hover:text-white"
                                 >
                                     <img src={chatIconSrc} alt="Chat icon" />
                                     Let's Discuss!
