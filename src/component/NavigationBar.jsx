@@ -31,6 +31,7 @@ export const NAV_LINKS = [
       { name: 'Essential', href: '#publishing/essential' },
       { name: 'Plus', href: '#publishing/plus' },
       { name: 'Elemental', href: '#publishing/elemental' },
+      { name: 'Softcover Publishing', href: '#publishing/softcover-publishing' },
       { name: 'Traditional Submissions', href: '#publishing/traditional' },
       { name: 'Distribution Setup', href: '#publishing/distribution' },
       { name: 'Print-on-Demand', href: '#publishing/pod' },
