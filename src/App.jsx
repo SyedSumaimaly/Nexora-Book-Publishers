@@ -22,6 +22,7 @@ import Plus from './pages/Plus';
 import Elemental from './pages/Elemental';
 import SoftcoverPublishing from './pages/SoftcoverPublishing';
 import PublicityCompaigns from './pages/PublicityCompaigns';
+import InternetMarketing from './pages/InternetMarketing';
 
 
 const ALL_PAGES = [
@@ -64,6 +65,7 @@ const ALL_PAGES = [
 
   // --- MARKETING SUB-PAGES (6) ---
   { path: '#marketing/publicity-compaigns', name: 'Publicity Compaigns', component: PublicityCompaigns },
+  { path: '#marketing/internet-marketing', name: 'Internet Marketing', component: InternetMarketing },
   { path: '#marketing/launch', name: 'Launch Strategy', component: () => <PageContent title="Book Launch Strategy & Planning" /> },
   { path: '#marketing/trailer', name: 'Book Trailer Production', component: () => <PageContent title="Professional Book Trailer Video" /> },
   { path: '#marketing/website', name: 'Author Website Design', component: () => <PageContent title="Custom Author Website Development" /> },

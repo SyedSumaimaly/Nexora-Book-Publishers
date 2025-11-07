@@ -25,7 +25,7 @@ const PublishingShortcutCTA = () => {
                         <p className="manifest-regular text-[#A7A7A7] text-base leading-[28px]">
                             Endless formatting, confusing platforms, and cover designs that make you cringe. Sound familiar?
                             Our Starter Package is your escape plan. Now no subpar publishing process can hold you back.
-                            Hurry up. Don't let another day slip by. **Contact us today!**
+                            Hurry up. Don't let another day slip by. Contact us today!
                         </p>
                         
                         {/* Email Subscription Form */}
