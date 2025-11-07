@@ -42,7 +42,6 @@ const ALL_PAGES = [
 
   // --- WRITING SUB-PAGES (6) ---
   { path: '#writing/book-coaching', name: 'Book Coaching', component: BookCoaching },
-  { path: '#writing/technical', name: 'Technical Writing', component: () => <PageContent title="Technical Manuals & Documentation" /> },
   { path: '#writing/business-and-leadership-book', name: 'Business And Leadership Book', component: BusinessLeadership },
 
   // --- EDITING SUB-PAGES (6) ---
@@ -50,11 +49,6 @@ const ALL_PAGES = [
   { path: '#editing/developmental', name: 'Developmental Edit', component: DevelopmentalEditing },
   { path: '#editing/cover-copy-polish', name: 'Cover Copy Polish', component: CoverCopyPolish },
   { path: '#editing/editorial-assessment', name: 'Editorial Assessment', component: EditorialAssessment },
-  { path: '#editing/copyediting', name: 'Copyediting', component: () => <PageContent title="Copyediting (Flow & Consistency)" /> },
-  { path: '#editing/line', name: 'Line Editing', component: () => <PageContent title="Line Editing (Style & Tone)" /> },
-  { path: '#editing/proofreading', name: 'Proofreading', component: () => <PageContent title="Proofreading (Final Polish)" /> },
-  { path: '#editing/critique', name: 'Manuscript Critique', component: () => <PageContent title="Manuscript Critique & Feedback" /> },
-  { path: '#editing/query', name: 'Query Letter Review', component: () => <PageContent title="Agent Query Letter Review" /> },
 
   // --- PUBLISHING SUB-PAGES (6) ---
   { path: '#publishing/starter', name: 'Starter', component: Starter },
@@ -66,11 +60,6 @@ const ALL_PAGES = [
   // --- MARKETING SUB-PAGES (6) ---
   { path: '#marketing/publicity-compaigns', name: 'Publicity Compaigns', component: PublicityCompaigns },
   { path: '#marketing/internet-marketing', name: 'Internet Marketing', component: InternetMarketing },
-  { path: '#marketing/launch', name: 'Launch Strategy', component: () => <PageContent title="Book Launch Strategy & Planning" /> },
-  { path: '#marketing/trailer', name: 'Book Trailer Production', component: () => <PageContent title="Professional Book Trailer Video" /> },
-  { path: '#marketing/website', name: 'Author Website Design', component: () => <PageContent title="Custom Author Website Development" /> },
-  { path: '#marketing/pr', name: 'PR & Media Outreach', component: () => <PageContent title="Public Relations & Media Outreach" /> },
-  { path: '#marketing/ads', name: 'Ad Management', component: () => <PageContent title="Paid Advertisement Management" /> },
 
   // --- DESIGN SUB-PAGES (6) ---
   { path: '#design/cover', name: 'Cover Design Premium', component: () => <PageContent title="Premium Book Cover Design" /> },

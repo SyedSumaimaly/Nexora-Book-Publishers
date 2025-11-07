@@ -18,11 +18,6 @@ export const NAV_LINKS = [
       { name: 'Developmental Edit', href: '#editing/developmental' },
       { name: 'Cover Copy Polish', href: '#editing/cover-copy-polish' },
       { name: 'Editorial Assessment', href: '#editing/editorial-assessment' },
-      { name: 'Copyediting', href: '#editing/copyediting' },
-      { name: 'Line Editing', href: '#editing/line' },
-      { name: 'Proofreading', href: '#editing/proofreading' },
-      { name: 'Manuscript Critique', href: '#editing/critique' },
-      { name: 'Query Letter Review', href: '#editing/query' },
     ]
   },
   {
@@ -38,12 +33,6 @@ export const NAV_LINKS = [
     name: 'Book Marketing', href: '#marketing', dropdown: true, section: 'left', subLinks: [
       { name: 'Publicity Compaigns', href: '#marketing/publicity-compaigns' },
       { name: 'Internet Marketing', href: '#marketing/internet-marketing' },
-      { name: 'Social Media Campaign', href: '#marketing/social' },
-      { name: 'Launch Strategy', href: '#marketing/launch' },
-      { name: 'Book Trailer Production', href: '#marketing/trailer' },
-      { name: 'Author Website Design', href: '#marketing/website' },
-      { name: 'PR & Media Outreach', href: '#marketing/pr' },
-      { name: 'Ad Management', href: '#marketing/ads' },
     ]
   },
 
