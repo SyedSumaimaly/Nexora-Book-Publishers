@@ -37,6 +37,7 @@ export const NAV_LINKS = [
   {
     name: 'Book Marketing', href: '#marketing', dropdown: true, section: 'left', subLinks: [
       { name: 'Publicity Compaigns', href: '#marketing/publicity-compaigns' },
+      { name: 'Internet Marketing', href: '#marketing/internet-marketing' },
       { name: 'Social Media Campaign', href: '#marketing/social' },
       { name: 'Launch Strategy', href: '#marketing/launch' },
       { name: 'Book Trailer Production', href: '#marketing/trailer' },
