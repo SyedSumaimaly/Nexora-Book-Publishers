@@ -23,6 +23,7 @@ import Elemental from './pages/Elemental';
 import SoftcoverPublishing from './pages/SoftcoverPublishing';
 import PublicityCompaigns from './pages/PublicityCompaigns';
 import InternetMarketing from './pages/InternetMarketing';
+import InteriorIllustration from './pages/InteriorIllustration';
 
 
 const ALL_PAGES = [
@@ -62,8 +63,7 @@ const ALL_PAGES = [
   { path: '#marketing/internet-marketing', name: 'Internet Marketing', component: InternetMarketing },
 
   // --- DESIGN SUB-PAGES (6) ---
-  { path: '#design/cover', name: 'Cover Design Premium', component: () => <PageContent title="Premium Book Cover Design" /> },
-  { path: '#design/interior', name: 'Interior Layout', component: () => <PageContent title="Book Interior Layout & Typesetting" /> },
+  { path: '#design/interior-illustration', name: 'Interior Illustration', component: InteriorIllustration },
   { path: '#design/brand', name: 'Brand Identity', component: () => <PageContent title="Author Brand Identity Package" /> },
   { path: '#design/illustration', name: 'Illustration Services', component: () => <PageContent title="Custom Book Illustration" /> },
   { path: '#design/mockups', name: 'Book Mockups', component: () => <PageContent title="3D Book Mockup Generation" /> },

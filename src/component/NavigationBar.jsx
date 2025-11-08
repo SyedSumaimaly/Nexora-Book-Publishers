@@ -39,19 +39,14 @@ export const NAV_LINKS = [
   // Right Section Links (Includes Book Design and other top-level pages)
   {
     name: 'Book Design', href: '#design', dropdown: true, section: 'right', subLinks: [
-      { name: 'Cover Design Premium', href: '#design/cover' },
-      { name: 'Interior Layout', href: '#design/interior' },
-      { name: 'Brand Identity', href: '#design/brand' },
-      { name: 'Illustration Services', href: '#design/illustration' },
-      { name: 'Book Mockups', href: '#design/mockups' },
-      { name: 'Print Formatting', href: '#design/print' },
+      { name: 'Interior Illustration', href: '#design/interior-illustration' },
     ]
   },
   { name: 'Our Story', href: '#story', dropdown: false, section: 'right' },
   { name: 'Our Reviews', href: '#reviews', dropdown: false, section: 'right' },
   { name: 'Portfolio', href: '#portfolio', dropdown: false, section: 'right' },
   { name: 'Contact Us', href: '#contact', dropdown: false, section: 'right' },
-  { name: 'Home', href: '#home', dropdown: false, section: 'right' }, // This link is visible in mobile menu only
+  { name: 'Home', href: '#home', dropdown: false, section: 'right' }, 
 ];
 
 
