@@ -25,13 +25,14 @@ import PublicityCompaigns from './pages/PublicityCompaigns';
 import InternetMarketing from './pages/InternetMarketing';
 import InteriorIllustration from './pages/InteriorIllustration';
 import InteriorColorIllustration from './pages/InteriorColorIllustration';
+import Reviews from './pages/Reviews';
 
 
 const ALL_PAGES = [
   // --- TOP LEVEL PAGES (5) ---
   { path: '#home', name: 'Home', component: HomePage },
   { path: '#story', name: 'Our Story', component: OurStory },
-  { path: '#reviews', name: 'Our Reviews', component: () => <PageContent title="Our Reviews" /> },
+  { path: '#reviews', name: 'Our Reviews', component: Reviews },
   { path: '#portfolio', name: 'Portfolio', component: () => <PageContent title="Portfolio" /> },
   { path: '#contact', name: 'Contact Us', component: () => <PageContent title="Contact Us" /> },
 

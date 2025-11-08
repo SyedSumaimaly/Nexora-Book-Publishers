@@ -1,7 +1,6 @@
 import React from 'react';
 
 const InteriorColorIllustrationServices = () => {
-    // Define the color illustration packages for clean rendering
     const colorPackages = [
         {
             title: "Color Illustrations - Personal Touch",
@@ -21,7 +20,6 @@ const InteriorColorIllustrationServices = () => {
         <section className="lg:py-24 2xl:px-0 py-12 px-6">
             <div className="container mx-auto">
                 <div className="w-full">
-                    {/* Main Heading and Introduction */}
                     <h2 className="luxury-regular text-[#1D1D1F] lg:text-[64px] text-[30px] leading-tight mb-4">
                         Interior Color Illustration
                     </h2>
