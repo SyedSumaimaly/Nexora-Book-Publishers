@@ -24,6 +24,7 @@ import SoftcoverPublishing from './pages/SoftcoverPublishing';
 import PublicityCompaigns from './pages/PublicityCompaigns';
 import InternetMarketing from './pages/InternetMarketing';
 import InteriorIllustration from './pages/InteriorIllustration';
+import InteriorColorIllustration from './pages/InteriorColorIllustration';
 
 
 const ALL_PAGES = [
@@ -64,7 +65,7 @@ const ALL_PAGES = [
 
   // --- DESIGN SUB-PAGES (6) ---
   { path: '#design/interior-illustration', name: 'Interior Illustration', component: InteriorIllustration },
-  { path: '#design/brand', name: 'Brand Identity', component: () => <PageContent title="Author Brand Identity Package" /> },
+  { path: '#design/interior-color-illustration', name: 'Interior Color Illustration', component: InteriorColorIllustration },
   { path: '#design/illustration', name: 'Illustration Services', component: () => <PageContent title="Custom Book Illustration" /> },
   { path: '#design/mockups', name: 'Book Mockups', component: () => <PageContent title="3D Book Mockup Generation" /> },
   { path: '#design/print', name: 'Print Formatting', component: () => <PageContent title="Print-Ready File Formatting" /> },

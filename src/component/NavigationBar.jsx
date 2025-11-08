@@ -40,6 +40,7 @@ export const NAV_LINKS = [
   {
     name: 'Book Design', href: '#design', dropdown: true, section: 'right', subLinks: [
       { name: 'Interior Illustration', href: '#design/interior-illustration' },
+      { name: 'Interior Color Illustration', href: '#design/interior-color-illustration' },
     ]
   },
   { name: 'Our Story', href: '#story', dropdown: false, section: 'right' },
