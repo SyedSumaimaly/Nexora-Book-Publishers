@@ -3,6 +3,7 @@ import InteriorColorIllustrationBanner from '../component/InteriorColorIllustrat
 import CounterStats from '../component/CounterStatsData';
 import InteriorColorIllustrationServices from '../component/InteriorColorIllustrationServices';
 import ElevateBookCtaWithDciImage from '../component/ElevateBookCtaWithDciImage';
+import FaqSection from '../component/FaqSection';
 
 
 function InteriorColorIllustration() {
@@ -12,6 +13,7 @@ function InteriorColorIllustration() {
             <CounterStats />
             <InteriorColorIllustrationServices />
             <ElevateBookCtaWithDciImage />
+            <FaqSection />
         </>
     )
 }
