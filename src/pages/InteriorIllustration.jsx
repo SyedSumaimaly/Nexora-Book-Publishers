@@ -2,6 +2,7 @@ import React from 'react'
 import InteriorIllustrationBanner from '../component/InteriorIllustrationBanner';
 import CounterStats from '../component/CounterStatsData';
 import BlackAndWhiteIllustrationServices from '../component/BlackAndWhiteIllustrationServices';
+import IllustrationBookElevationCta from '../component/IllustrationBookElevationCta';
 
 function InteriorIllustration() {
     return (
@@ -9,6 +10,7 @@ function InteriorIllustration() {
             <InteriorIllustrationBanner />
             <CounterStats />
             <BlackAndWhiteIllustrationServices />
+            <IllustrationBookElevationCta />
         </>
     )
 }
