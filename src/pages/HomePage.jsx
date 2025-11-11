@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Banner from '../component/Banner'
 import VideoSection from '../component/VideoSection'
 import ChartTopperSlider from '../component/ChartTopperSlider'
@@ -11,11 +11,18 @@ import SliderSection from '../component/SliderSection'
 import SliderPlaceholder from '../component/SliderPlaceholder'
 import HowWeOperateSection from '../component/HowWeOperateSection'
 import FaqSection from '../component/FaqSection'
+import ContactModal from '../component/ContactModal'
 
 function HomePage() {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return (
         <>
-            <Banner />
+            <Banner openModal={openModal} />
             <VideoSection />
             <ChartTopperSlider />
             <CounterStats />
@@ -27,6 +34,8 @@ function HomePage() {
             <SliderPlaceholder />
             <HowWeOperateSection />
             <FaqSection />
+
+            <ContactModal isOpen={isModalOpen} onClose={closeModal} />
         </>
     )
 }
