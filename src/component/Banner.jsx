@@ -28,7 +28,7 @@ const FALLBACK_MOUSE = MOUSE_ICON;
 
 // --- Banner Component ---
 
-const Banner = ({ onDiscussClick }) => {
+const Banner = ({ openModal }) => {
     
     return (
         <section className="bg-white text-[#1D1D1F] overflow-x-hidden xl:overflow-x-clip">
@@ -77,7 +77,7 @@ const Banner = ({ onDiscussClick }) => {
 
                 {/* CTA Button */}
                 <button
-                    onClick={onDiscussClick}
+                    onClick={ openModal }
                     className="luxury-regular mt-20 flex justify-center items-center w-[220px] xl:w-[325px] ease-in duration-300 bg-gradient-to-t from-[#EB420A] to-[#FB7A4F] rounded-full py-2 xl:py-4 text-white text-lg xl:text-2xl hover:scale-105 transition-transform shadow-xl shadow-[#EB420A]/50 z-20"
                 >
                     <img
@@ -89,15 +89,6 @@ const Banner = ({ onDiscussClick }) => {
                     Let's Discuss!
                 </button>
 
-                {/* Scroll Down Indicator (Mouse Icon) */}
-                <a href="#next-section" className="mouse absolute bottom-0 sm:bottom-12 left-1/2 -translate-x-1/2 mx-auto block z-20 transition-all duration-300 hover:scale-110">
-                    <img
-                        src={MOUSE_ICON} // Use placeholder URL
-                        alt="Scroll Mouse Icon"
-                        className="w-[20px] opacity-70"
-                        onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_MOUSE; }}
-                    />
-                </a>
             </div>
         </section>
     );

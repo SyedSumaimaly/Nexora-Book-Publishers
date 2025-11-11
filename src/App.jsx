@@ -26,6 +26,8 @@ import InternetMarketing from './pages/InternetMarketing';
 import InteriorIllustration from './pages/InteriorIllustration';
 import InteriorColorIllustration from './pages/InteriorColorIllustration';
 import Reviews from './pages/Reviews';
+import Portfolio from './pages/PortfolioPage';
+
 
 
 const ALL_PAGES = [
@@ -33,7 +35,7 @@ const ALL_PAGES = [
   { path: '#home', name: 'Home', component: HomePage },
   { path: '#story', name: 'Our Story', component: OurStory },
   { path: '#reviews', name: 'Our Reviews', component: Reviews },
-  { path: '#portfolio', name: 'Portfolio', component: () => <PageContent title="Portfolio" /> },
+  { path: '#portfolio', name: 'Portfolio', component: Portfolio },
   { path: '#contact', name: 'Contact Us', component: () => <PageContent title="Contact Us" /> },
 
   // --- MAIN CATEGORY PAGES (5) ---
@@ -95,6 +97,7 @@ const App = () => {
     ? currentPage.component
     : () => <PageContent title="404 - Page Not Found" />; // Use the imported PageContent
 
+    
   return (
 
     <Layout>
