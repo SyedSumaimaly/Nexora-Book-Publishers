@@ -27,6 +27,7 @@ import InteriorIllustration from './pages/InteriorIllustration';
 import InteriorColorIllustration from './pages/InteriorColorIllustration';
 import Reviews from './pages/Reviews';
 import Portfolio from './pages/PortfolioPage';
+import Contact from './pages/Contact';
 
 
 
@@ -36,7 +37,7 @@ const ALL_PAGES = [
   { path: '#story', name: 'Our Story', component: OurStory },
   { path: '#reviews', name: 'Our Reviews', component: Reviews },
   { path: '#portfolio', name: 'Portfolio', component: Portfolio },
-  { path: '#contact', name: 'Contact Us', component: () => <PageContent title="Contact Us" /> },
+  { path: '#contact', name: 'Contact Us', component: Contact },
 
   // --- MAIN CATEGORY PAGES (5) ---
   { path: '#writing', name: 'Book Writing', component: BookWriting },

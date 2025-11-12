@@ -9,6 +9,9 @@ function PortfolioPage() {
     return (
         <>
             <PortfolioBanner />
+            <HallOfFame />
+            <CounterStats />
+            <BookPortfolio />
         </>
     )
 }
