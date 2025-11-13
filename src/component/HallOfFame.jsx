@@ -28,24 +28,16 @@ const hallOfFameItems = [
     { title: "The Real True Beatles", imageSrc: bookTwelve, alt: "The Real True Beatles book cover" },
 ];
 
-// Helper Component for a single item (Optional but good for separation)
 const HallOfFameItem = ({ title, imageSrc, alt }) => (
     <div className="w-full max-w-[300px]">
-        {/* The image component, remember to adjust image path if necessary */}
         <img 
             src={imageSrc} 
             className="w-full" 
             alt={alt} 
-            // Add object-cover for better image fitting if needed, depending on image aspect ratio
         /> 
-        {/* Note: I'm using a placeholder for custom fonts like 'manifest-regular' and 'luxury-regular' as they aren't standard Tailwind classes. 
-           You'll need to configure these custom fonts in your tailwind.config.js for them to work. 
-           For this conversion, I've kept the custom class names as they were in your original HTML. */}
         <h1 className="text-[22px] manifest-regular text-[#1D1D1F] font-medium mt-2">
             {title}
         </h1>
-        {/* If you wanted to include the paragraph description, uncomment the line below: */}
-        {/* <p className="text-[14px] text-[#8C8C8C] manifest-regular text-balance leading-tight">A description.</p> */}
     </div>
 );
 
@@ -62,7 +54,7 @@ const HallOfFame = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-y-10 gap-y-5 lg:gap-x-32 gap-x-5">
                     {hallOfFameItems.map((item, index) => (
                         <HallOfFameItem 
-                            key={index} // Key is essential when mapping over arrays
+                            key={index} 
                             title={item.title}
                             imageSrc={item.imageSrc}
                             alt={item.alt}
