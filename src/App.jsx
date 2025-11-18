@@ -28,81 +28,112 @@ import InteriorColorIllustration from './pages/InteriorColorIllustration';
 import Reviews from './pages/Reviews';
 import Portfolio from './pages/PortfolioPage';
 import Contact from './pages/Contact';
+import ThemedScrollBookmark from './component/ThemedScrollBookmark';
+import PageNotFound from './component/PageNotFound';
 
 
 
 const ALL_PAGES = [
   // --- TOP LEVEL PAGES (5) ---
-  { path: '#home', name: 'Home', component: HomePage },
-  { path: '#story', name: 'Our Story', component: OurStory },
-  { path: '#reviews', name: 'Our Reviews', component: Reviews },
-  { path: '#portfolio', name: 'Portfolio', component: Portfolio },
-  { path: '#contact', name: 'Contact Us', component: Contact },
+  { path: '/', name: 'Home', component: HomePage },
+  { path: '/story', name: 'Our Story', component: OurStory },
+  { path: '/reviews', name: 'Our Reviews', component: Reviews },
+  { path: '/portfolio', name: 'Portfolio', component: Portfolio },
+  { path: '/contact', name: 'Contact Us', component: Contact },
+  { path: '/PageNotFound', name: 'Page Not Found', component: PageNotFound },
 
-  // --- MAIN CATEGORY PAGES (5) ---
-  { path: '#writing', name: 'Book Writing', component: BookWriting },
-  { path: '#editing', name: 'Book Editing', component: BookEditing },
-  { path: '#publishing', name: 'Book Publishing', component: BookPublishing },
-  { path: '#marketing', name: 'Book Marketing', component: BookMarketing },
-  { path: '#design', name: 'Book Design', component: BookDesign },
+  // --- MAIN CATEGORY PAGES (4) ---
+  { path: '/book-writing-editing', name: 'Book Writing & Editing', component: BookWriting },
+  { path: '/publishing', name: 'Book Publishing', component: BookPublishing },
+  { path: '/marketing', name: 'Book Marketing', component: BookMarketing },
+  { path: '/design', name: 'Book Design', component: BookDesign },
 
-  // --- WRITING SUB-PAGES (6) ---
-  { path: '#writing/book-coaching', name: 'Book Coaching', component: BookCoaching },
-  { path: '#writing/business-and-leadership-book', name: 'Business And Leadership Book', component: BusinessLeadership },
+  // --- WRITING & Editing SUB-PAGES (8) ---
+  { path: '/book-writing-editing/book-writing', name: 'Book Writing', component: BookWriting },
+  { path: '/book-writing-editing/book-editing', name: 'Book Editing', component: BookEditing },
+  { path: '/book-writing-editing/book-coaching', name: 'Book Coaching', component: BookCoaching },
+  { path: '/book-writing-editing/business-and-leadership-book', name: 'Business And Leadership Book', component: BusinessLeadership },
+  { path: '/book-writing-editing/review-consultation-services', name: 'Review Consultation Services', component: ReviewConsultationServices },
+  { path: '/book-writing-editing/developmental', name: 'Developmental Edit', component: DevelopmentalEditing },
+  { path: '/book-writing-editing/cover-copy-polish', name: 'Cover Copy Polish', component: CoverCopyPolish },
+  { path: '/book-writing-editing/editorial-assessment', name: 'Editorial Assessment', component: EditorialAssessment },
 
-  // --- EDITING SUB-PAGES (6) ---
-  { path: '#editing/review-consultation-services', name: 'Review Consultation Services', component: ReviewConsultationServices },
-  { path: '#editing/developmental', name: 'Developmental Edit', component: DevelopmentalEditing },
-  { path: '#editing/cover-copy-polish', name: 'Cover Copy Polish', component: CoverCopyPolish },
-  { path: '#editing/editorial-assessment', name: 'Editorial Assessment', component: EditorialAssessment },
+  // --- PUBLISHING SUB-PAGES (5) ---
+  { path: '/publishing/starter', name: 'Starter', component: Starter },
+  { path: '/publishing/essential', name: 'Essential', component: Essential },
+  { path: '/publishing/plus', name: 'Plus', component: Plus },
+  { path: '/publishing/elemental', name: 'Elemental', component: Elemental },
+  { path: '/publishing/softcover-publishing', name: 'Softcover Publishing', component: SoftcoverPublishing },
 
-  // --- PUBLISHING SUB-PAGES (6) ---
-  { path: '#publishing/starter', name: 'Starter', component: Starter },
-  { path: '#publishing/essential', name: 'Essential', component: Essential },
-  { path: '#publishing/plus', name: 'Plus', component: Plus },
-  { path: '#publishing/elemental', name: 'Elemental', component: Elemental },
-  { path: '#publishing/softcover-publishing', name: 'Softcover Publishing', component: SoftcoverPublishing },
+  // --- MARKETING SUB-PAGES (2) ---
+  { path: '/marketing/publicity-compaigns', name: 'Publicity Compaigns', component: PublicityCompaigns },
+  { path: '/marketing/internet-marketing', name: 'Internet Marketing', component: InternetMarketing },
 
-  // --- MARKETING SUB-PAGES (6) ---
-  { path: '#marketing/publicity-compaigns', name: 'Publicity Compaigns', component: PublicityCompaigns },
-  { path: '#marketing/internet-marketing', name: 'Internet Marketing', component: InternetMarketing },
-
-  // --- DESIGN SUB-PAGES (6) ---
-  { path: '#design/interior-illustration', name: 'Interior Illustration', component: InteriorIllustration },
-  { path: '#design/interior-color-illustration', name: 'Interior Color Illustration', component: InteriorColorIllustration },
-  { path: '#design/illustration', name: 'Illustration Services', component: () => <PageContent title="Custom Book Illustration" /> },
-  { path: '#design/mockups', name: 'Book Mockups', component: () => <PageContent title="3D Book Mockup Generation" /> },
-  { path: '#design/print', name: 'Print Formatting', component: () => <PageContent title="Print-Ready File Formatting" /> },
+  // --- DESIGN SUB-PAGES (5) ---
+  { path: '/design/interior-illustration', name: 'Interior Illustration', component: InteriorIllustration },
+  { path: '/design/interior-color-illustration', name: 'Interior Color Illustration', component: InteriorColorIllustration },
+  { path: '/design/illustration', name: 'Illustration Services', component: () => <PageContent title="Custom Book Illustration" /> },
+  { path: '/design/mockups', name: 'Book Mockups', component: () => <PageContent title="3D Book Mockup Generation" /> },
+  { path: '/design/print', name: 'Print Formatting', component: () => <PageContent title="Print-Ready File Formatting" /> },
 ];
 
 
-// --- Main App Component (Router) ---
+
 const App = () => {
-  const [currentPath, setCurrentPath] = useState(window.location.hash || '#home');
-  
+  const [currentPath, setCurrentPath] = useState(
+    window.location.pathname.split('?')[0] || '/'
+  );
 
   useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.split('?')[0];
-      setCurrentPath(hash || '#home');
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname.split('?')[0] || '/');
     };
 
-    window.addEventListener('hashchange', handleHashChange);
+    const handleLinkClick = (e) => {
+
+      const target = e.target.closest('a');
+      if (target && target.pathname.startsWith('/')) {
+        e.preventDefault();
+
+        const newPath = target.pathname;
+
+        window.history.pushState({}, '', newPath);
+
+        setCurrentPath(newPath);
+
+        window.scrollTo(0, 0);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    document.addEventListener('click', handleLinkClick);
+
     return () => {
-      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener('popstate', handlePopState);
+      document.removeEventListener('click', handleLinkClick);
     };
   }, []);
 
+  // 1. Find the PageNotFound component directly from the array for fallback
+  const notFoundPage = ALL_PAGES.find(page => page.path === '/PageNotFound');
+  const NotFoundComponent = notFoundPage
+    ? notFoundPage.component
+    : () => <PageContent title="404 - Component Not Found in List" />; // Secondary fallback
+
+  // 2. Find the current page based on the path
   const currentPage = ALL_PAGES.find(page => page.path === currentPath);
+
+  // 3. Use the matching component or the dedicated PageNotFound component as a fallback
   const PageComponent = currentPage
     ? currentPage.component
-    : () => <PageContent title="404 - Page Not Found" />; // Use the imported PageContent
+    : NotFoundComponent;
 
-    
   return (
 
     <Layout>
       <PageComponent />
+      <ThemedScrollBookmark />
     </Layout>
 
   );

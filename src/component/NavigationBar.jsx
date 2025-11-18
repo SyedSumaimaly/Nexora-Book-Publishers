@@ -5,49 +5,46 @@ import logo from '../assets/logo.png'
 // --- Navigation Data (Centralized source) ---
 // This list drives both the navigation menu display and the application routing.
 export const NAV_LINKS = [
-  // Left Section Services (Dropdowns - 6 sub-links each)
   {
-    name: 'Book Writing', href: '#writing', dropdown: true, section: 'left', subLinks: [
-      { name: 'Book Coaching', href: '#writing/book-coaching' },
-      { name: 'Business And Leadership Book', href: '#writing/business-and-leadership-book' },
+    name: 'Book Writing & Editing', dropdown: true, section: 'left', subLinks: [
+      { name: 'Book Writing', href: '/book-writing-editing/book-writing' },
+      { name: 'Book Editing', href: '/book-writing-editing/book-editing', },
+      { name: 'Book Coaching', href: '/book-writing-editing/book-coaching' },
+      { name: 'Business And Leadership Book', href: '/book-writing-editing/business-and-leadership-book' },
+      { name: 'Review Consultation Services', href: '/book-writing-editing/review-consultation-services' },
+      { name: 'Developmental Edit', href: '/book-writing-editing/developmental' },
+      { name: 'Cover Copy Polish', href: '/book-writing-editing/cover-copy-polish' },
+      { name: 'Editorial Assessment', href: '/book-writing-editing/editorial-assessment' },
     ]
   },
   {
-    name: 'Book Editing', href: '#editing', dropdown: true, section: 'left', subLinks: [
-      { name: 'Review Consultation Services', href: '#editing/review-consultation-services' },
-      { name: 'Developmental Edit', href: '#editing/developmental' },
-      { name: 'Cover Copy Polish', href: '#editing/cover-copy-polish' },
-      { name: 'Editorial Assessment', href: '#editing/editorial-assessment' },
+    name: 'Book Publishing', href: '/publishing', dropdown: true, section: 'left', subLinks: [
+      { name: 'Starter', href: '/publishing/starter' },
+      { name: 'Essential', href: '/publishing/essential' },
+      { name: 'Plus', href: '/publishing/plus' },
+      { name: 'Elemental', href: '/publishing/elemental' },
+      { name: 'Softcover Publishing', href: '/publishing/softcover-publishing' },
     ]
   },
   {
-    name: 'Book Publishing', href: '#publishing', dropdown: true, section: 'left', subLinks: [
-      { name: 'Starter', href: '#publishing/starter' },
-      { name: 'Essential', href: '#publishing/essential' },
-      { name: 'Plus', href: '#publishing/plus' },
-      { name: 'Elemental', href: '#publishing/elemental' },
-      { name: 'Softcover Publishing', href: '#publishing/softcover-publishing' },
-    ]
-  },
-  {
-    name: 'Book Marketing', href: '#marketing', dropdown: true, section: 'left', subLinks: [
-      { name: 'Publicity Compaigns', href: '#marketing/publicity-compaigns' },
-      { name: 'Internet Marketing', href: '#marketing/internet-marketing' },
+    name: 'Book Marketing', href: '/marketing', dropdown: true, section: 'left', subLinks: [
+      { name: 'Publicity Compaigns', href: '/marketing/publicity-compaigns' },
+      { name: 'Internet Marketing', href: '/marketing/internet-marketing' },
     ]
   },
 
   // Right Section Links (Includes Book Design and other top-level pages)
   {
-    name: 'Book Design', href: '#design', dropdown: true, section: 'right', subLinks: [
-      { name: 'Interior Illustration', href: '#design/interior-illustration' },
-      { name: 'Interior Color Illustration', href: '#design/interior-color-illustration' },
+    name: 'Book Design', href: '/design', dropdown: true, section: 'right', subLinks: [
+      { name: 'Interior Illustration', href: '/design/interior-illustration' },
+      { name: 'Interior Color Illustration', href: '/design/interior-color-illustration' },
     ]
   },
-  { name: 'Our Story', href: '#story', dropdown: false, section: 'right' },
-  { name: 'Our Reviews', href: '#reviews', dropdown: false, section: 'right' },
-  { name: 'Portfolio', href: '#portfolio', dropdown: false, section: 'right' },
-  { name: 'Contact Us', href: '#contact', dropdown: false, section: 'right' },
-  { name: 'Home', href: '#home', dropdown: false, section: 'right' }, 
+  { name: 'Our Story', href: '/story', dropdown: false, section: 'left' },
+  { name: 'Our Reviews', href: '/reviews', dropdown: false, section: 'right' },
+  { name: 'Portfolio', href: '/portfolio', dropdown: false, section: 'right' },
+  { name: 'Contact Us', href: '/contact', dropdown: false, section: 'right' },
+  { name: 'Home', href: '/', dropdown: false, section: 'right' },
 ];
 
 
@@ -69,7 +66,7 @@ const NavItem = ({ item }) => {
       onMouseEnter={() => dropdown && setIsOpen(true)}
       onMouseLeave={() => dropdown && setIsOpen(false)}
     >
-      <a href={href || '#'} className="flex items-center cursor-pointer text-sm text-gray-900 hover:text-red-600 font-medium whitespace-nowrap px-1 py-4 transition-colors">
+      <a href={href || '/'} className="flex items-center cursor-pointer text-sm text-gray-900 hover:text-red-600 font-medium whitespace-nowrap px-1 py-4 transition-colors">
         {name}
         {dropdown && ChevronIcon}
       </a>
@@ -101,7 +98,7 @@ const NavigationBar = () => {
   const navItemsLeft = NAV_LINKS.filter(item => item.section === 'left');
 
   // Filter for right section: exclude 'Home' on desktop for visual symmetry (4 links each side)
-  const navItemsRightDesktop = NAV_LINKS.filter(item => item.section === 'right' && item.name !== 'Home');
+  const navItemsRightDesktop = NAV_LINKS.filter(item => item.section === 'right');
 
   // State for overall mobile menu open/close
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -176,7 +173,7 @@ const NavigationBar = () => {
             <div key={item.name} className="relative">
               {/* Main link/Dropdown trigger */}
               <a
-                href={item.href || '#'} // Use href if available
+                href={item.href || '/'} // Use href if available
                 onClick={(e) => {
                   if (item.dropdown) e.preventDefault();
                   handleMobileClick(item.name, item.dropdown);
