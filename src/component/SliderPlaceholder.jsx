@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import ActionImg from '../assets/Book-Categories/Action/1.png'
+import AdultImg from '../assets/Book-Categories/AdultBooks/5.png'
+import ChildrenImg from '../assets/Book-Categories/Childrens/1.png'
+import ComicImg from '../assets/Book-Categories/Comics/1.png'
+import NonFictionImg from '../assets/Book-Categories/NonFiction/1.png'
 
 // Sample data for the carousel
 // In a real application, these URLs would be dynamic or loaded from an external source.
 const BOOK_COVERS = [
     { id: 1, title: "Control", genre: "Sci-Fi", author: "A. S. Author", url: ActionImg },
-    { id: 2, title: "Memories", genre: "Drama", author: "B. T. Booker", url: "https://placehold.co/150x230/7E2B38/FFFFFF?text=MEMORIES" },
-    { id: 3, title: "Seven Rabbits", genre: "Thriller", author: "Timothy King", url: "https://placehold.co/150x230/F48A3A/000000?text=SEVEN+RABBITS" },
-    { id: 4, title: "Motherhood", genre: "Memoir", author: "C. U. Writer", url: "https://placehold.co/150x230/2A6F97/FFFFFF?text=MOTHERHOOD" },
-    { id: 5, title: "Shadows", genre: "Mystery", author: "D. V. Novelist", url: "https://placehold.co/150x230/003C35/FFFFFF?text=SHADOWS" },
+    { id: 2, title: "Memories", genre: "Drama", author: "B. T. Booker", url: AdultImg },
+    { id: 3, title: "Seven Rabbits", genre: "Thriller", author: "Timothy King", url: ChildrenImg },
+    { id: 4, title: "Motherhood", genre: "Memoir", author: "C. U. Writer", url: ComicImg },
+    { id: 5, title: "Shadows", genre: "Mystery", author: "D. V. Novelist", url: NonFictionImg },
 ];
 
 const BookCover = ({ book, isCentral }) => {
@@ -31,7 +35,7 @@ const BookCover = ({ book, isCentral }) => {
             {/* Using a simple image placeholder */}
             <img
                 src={book.url}
-                alt={book.title}
+                // alt={book.title}
                 className="w-full h-full object-cover"
             />
         </div>
@@ -125,12 +129,12 @@ const SliderPlaceholder = () => {
                     <div className="flex flex-col items-center mt-12 space-y-4">
 
                         {/* Book Details */}
-                        <div className="text-center">
+                        {/* <div className="text-center">
                             <h3 className={`text-2xl font-semibold ${TEXT_COLOR}`}>
                                 {centralBook.title}
                             </h3>
                             <p className="text-gray-400">{centralBook.author}</p>
-                        </div>
+                        </div> */}
 
                         {/* Mobile Next/Prev buttons */}
                         <div className="flex space-x-6 md:hidden">
