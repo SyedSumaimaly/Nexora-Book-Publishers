@@ -3,7 +3,6 @@ import MessageIcon from '../assets/message.png';
 import DiscoveringImage from '../assets/discovering.png';
 
 const PolishingDiamondsSection = () => {
-    // Function to handle button click, mimicking the original onclick behavior
     const handleDiscussClick = () => {
         // Replace with your actual modal and URL setting logic
         // console.log("Let's Discuss button clicked!");

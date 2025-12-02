@@ -113,7 +113,7 @@ const ServicesArea = () => {
                 autoPlay
                 muted
                 loop
-                className="absolute top-0 left-0 w-full h-full object-cover opacity-70 -z-10" // Added opacity for dark feel
+                className="absolute top-0 left-0 w-full h-full object-cover opacity-70 -z-10" 
             />
 
             <div className="services_area relative z-10">

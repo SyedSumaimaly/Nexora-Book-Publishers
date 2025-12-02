@@ -5,23 +5,20 @@ import SuperFunFactImg from '../assets/superfunfacts.png'
 import PalmattoImg from '../assets/palmetto.png'
 import ArrowImg from '../assets/send-arrow.png'
 
-// Placeholder URLs for the small book covers
+
 const BOOK_COVER_URLS = [
     FlowImg,
     SuperFunFactImg,
     PalmattoImg,
     BlackTideImg,
-    // Note: The totalSlides is 4, so these are extra unless you plan to expand
     "https://placehold.co/60x90/B5B5B5/333?text=Book3",
     "https://placehold.co/60x90/A3A3A3/333?text=Book4",
 ];
 
 const SliderSection = () => {
-    // State to simulate the current active slide index
     const [currentSlide, setCurrentSlide] = useState(1);
-    const totalSlides = 4; // Adjusted to 4 to match the number of main thumbnails
+    const totalSlides = 4; 
 
-    // Updated content to reflect a portfolio item
     const slides = [
         {
             id: 1,
@@ -36,29 +33,23 @@ const SliderSection = () => {
         { id: 4, title: "Black Tides", intro: "Our Portfolio", text: "Dive into a gripping thriller where dark secrets and relentless waves collide. Discover betrayal and redemption in the shadows of a coastal town.", detail: "The books we have written for our clients so far speak for themselves. Have a look at what we can can do and then let's talk business!", coverImage: BOOK_COVER_URLS[3] },
     ];
 
-    // Function to handle moving to the next slide
+
     const handleNext = () => {
-        // Correctly cycle the index from 1 to 4
         setCurrentSlide(prev => (prev % totalSlides) + 1);
     };
 
-    // Get the content for the current slide
+
     const activeSlide = slides.find(slide => slide.id === currentSlide);
     const coverToDisplay = activeSlide.coverImage;
 
-    // Use flex on the navigation container
+
     const navigationStyling = "flex items-center space-x-4";
 
     return (
-        // Ensured section centers content vertically with min-h-screen
         <section className="bg-white min-h-screen flex items-center overflow-x-hidden">
-            <div className="slider py-16 w-full"> {/* Removed unnecessary md:py-20 as py-16 is good */}
+            <div className="slider py-16 w-full">
                 <div className="container mx-auto px-4">
-                    {/* Main flex container: Ensures content is centered and switches to row on large screens */}
                     <div className="flex flex-col lg:flex-row items-center justify-between min-h-[500px] lg:space-x-12">
-
-                        {/* Left Content Area (Text and Navigation) */}
-                        {/* Added text-center for small screens, text-left for large screens */}
                         <div className="slider__wrraper w-full lg:w-1/2 p-4 md:p-0 order-2 lg:order-1 text-center lg:text-left"> 
 
                             {/* Main Title and Description */}

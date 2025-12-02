@@ -1,6 +1,4 @@
 import React from 'react';
-// Assuming 'images/portfoliobanner-img-new.png' is in your public directory 
-// or imported if you're using a bundler (like Vite/Webpack) with asset imports.
 import MessageIcon from '../assets/message.png'
 import PortfolioBannerImage from '../assets/portfoliobanner-img-new.png'
 
@@ -41,9 +39,6 @@ const PortfolioBanner = () => {
                     alt="Portfolio banner image"
                 />
             </div>
-            {/* The closing div from your HTML was outside the section, so it's placed here 
-                to maintain the original structure, though it seems extraneous and might be removed.
-            */}
             <div />
         </section>
     );

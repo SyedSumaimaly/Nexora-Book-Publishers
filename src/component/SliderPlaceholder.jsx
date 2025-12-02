@@ -6,8 +6,7 @@ import ChildrenImg from '../assets/Book-Categories/Childrens/1.png'
 import ComicImg from '../assets/Book-Categories/Comics/1.png'
 import NonFictionImg from '../assets/Book-Categories/NonFiction/1.png'
 
-// Sample data for the carousel
-// In a real application, these URLs would be dynamic or loaded from an external source.
+
 const BOOK_COVERS = [
     { id: 1, title: "Control", genre: "Sci-Fi", author: "A. S. Author", url: ActionImg },
     { id: 2, title: "Memories", genre: "Drama", author: "B. T. Booker", url: AdultImg },
@@ -17,10 +16,8 @@ const BOOK_COVERS = [
 ];
 
 const BookCover = ({ book, isCentral }) => {
-    // Determine the style based on whether the book is the center, fully visible one
-    // ACTIVE: large (scale-125), full opacity
+
     const scale = isCentral ? 'scale-125 shadow-2xl shadow-gray-700 opacity-100' : 'scale-75 opacity-10';
-    // Rotation for peripheral books
     const rotation = isCentral ? 'rotate-0' : 'rotate-[-10deg]';
     const zIndex = isCentral ? 'z-10' : 'z-0';
 
@@ -32,10 +29,8 @@ const BookCover = ({ book, isCentral }) => {
                 ${scale} ${rotation} ${zIndex}
             `}
         >
-            {/* Using a simple image placeholder */}
             <img
                 src={book.url}
-                // alt={book.title}
                 className="w-full h-full object-cover"
             />
         </div>
@@ -44,7 +39,7 @@ const BookCover = ({ book, isCentral }) => {
 
 const SliderPlaceholder = () => {
     // Current index tracks the book in the center position
-    const [currentIndex, setCurrentIndex] = useState(2); // Start at "Seven Rabbits"
+    const [currentIndex, setCurrentIndex] = useState(2);
 
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % BOOK_COVERS.length);
@@ -72,7 +67,6 @@ const SliderPlaceholder = () => {
     const visibleCovers = getVisibleCovers();
     const centralBook = BOOK_COVERS[currentIndex];
 
-    // Tailwind Dark Background Class
     const BG_COLOR = 'bg-[#1D1D1F]';
     const TEXT_COLOR = 'text-white';
     const FAINT_COLOR = 'text-gray-700';
@@ -103,7 +97,6 @@ const SliderPlaceholder = () => {
                             <BookCover
                                 key={book.id}
                                 book={book}
-                                // The middle element (index 2 in the visibleCovers array) is the central one
                                 isCentral={index === 2}
                             />
                         ))}

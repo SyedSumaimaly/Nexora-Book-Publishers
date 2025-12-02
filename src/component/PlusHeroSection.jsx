@@ -20,7 +20,6 @@ const PlusHeroSection = () => {
             <div className="container mx-auto py-10">
                 <div className="md:flex items-center">
                     <div className="w-full lg:px-56 px-6 2xl-px-0 text-center">
-                        {/* Main Heading: Changed from "Essential" to "Plus" */}
                         <h1
                             className="luxury-regular text-[#1D1D1F] text-4xl leading-[40px] lg:text-5xl lg:leading-[64px] md:text-4xl md:leading-[40px] xl:text-8xl xl:leading-[80px] font-normal mb-5"
                             data-cursor="-opaque -mb -color-white"
